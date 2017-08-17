@@ -2,19 +2,21 @@
  
  include_once "connect.php";
  
- $name = $_POST['name'];
- $age = $_POST['age'];
- $email = $_POST['email'];
+ if($_POST){
+ 	$name = $_POST['name'];
+ 	$age = $_POST['age'];
+ 	$email = $_POST['email'];
 
- $CreateSql = "INSERT INTO `CRUD` (NAME, AGE, EMAIL) VALUES ('$name', '$age', '$email')";
- $res = mysqli_query($connection, $CreateSql);
-
- if($res) {
- 	echo "Successfully Inserted Data";
- }
- else {
- 	echo "Failed Data Insertion";
- }
+ 	$CreateSql = "INSERT INTO `CRUD` (NAME, AGE, EMAIL) VALUES ('$name', '$age', '$email')";
+ 	$res = mysqli_query($connection, $CreateSql);
+ 	if($res) {
+	 	echo "Successfully Inserted Data";
+	 }
+	 else {
+	 	echo "Failed Data Insertion";
+	 }
+}
+ 
 
 ?>
 

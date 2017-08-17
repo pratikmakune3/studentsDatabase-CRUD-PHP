@@ -1,0 +1,17 @@
+Steps - 
+
+1. Creating a project -
+	Create a project 'CRUD' folder inside XAMPP/htdocs
+	Create index.php
+
+2. Creating the DB -
+	Create database  Demo in localhost/phpmyadmin
+	Create a table 'crud' inside Demo DB manually
+
+3. Connecting to the DB - 
+	Create connect.php
+	Include connect.php inside index.php
+
+4. Insert data into table, index.php.
+
+5. Retrieve and show the data in view.php

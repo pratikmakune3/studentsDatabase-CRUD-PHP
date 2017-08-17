@@ -27,9 +27,10 @@ $result = mysqli_query($connection, $ReadSql)
 		    <td><?php echo $row['name'] ?></td>
 		    <td><?php echo $row['age'] ?></td>
 		    <td><?php echo $row['email'] ?></td>
-		    <td><a href="#">Edit</a> <a href="#">Delete</a></td>
+		    <td><a href="update.php?id=<?php echo $row['id'] ?> ">Edit</a> <a href="delete.php?id=<?php echo $row['id'] ?>">Delete</a></td>
 		  </tr>
 	    <?php }
+
 	    /* free result set */
 	    mysqli_free_result($result);
   	} ?>
